@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro de Usu�rio</title>
+    <title>Cadastro de Usuário</title>
 </head>
 <body>
     <h1>Cadastro</h1>
@@ -25,8 +26,11 @@
 
         <label>Confirmar Senha:</label>
         <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
-
-        <button type="submit">Enviar</button>
+	
+		<p>Já possui uma conta?<a href="login-usuario.jsp">Inicie uma sessão</a></p>
+		
+        <button type="submit">Enviar</button><br>
+         <button type="reset">Limpar</button>
     </form>
 
 </body>

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-    private static final String URL = "jdbc:mysql://localhost:3306/cadastro_usuarios?useSSL=false&serverTimezone=UTC";
+    private static final String URL = "jdbc:mysql://localhost:3306/cadastro_usuario?useSSL=false&serverTimezone=UTC";
     private static final String USUARIO = "root";
     private static final String SENHA = "";
 
