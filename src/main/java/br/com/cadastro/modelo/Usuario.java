@@ -7,6 +7,18 @@ public class Usuario {
 	private String email;
 	private String senha;
 	
+	public Usuario() {
+		
+	}
+	
+	public Usuario(String nome, String sobrenome, String apelido, String email, String senha) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.apelido = apelido;
+		this.email = email;
+		this.senha = senha;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

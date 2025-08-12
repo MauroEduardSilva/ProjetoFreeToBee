@@ -25,13 +25,7 @@ public class CadastroServlet extends HttpServlet {
         String email = request.getParameter("email");
         String senha = request.getParameter("senha");
         
-        Usuario u = new Usuario();
-   
-        u.setNome(request.getParameter("nome"));
-        u.setSobrenome(request.getParameter("sobrenome"));
-        u.setApelido(request.getParameter("apelido"));
-        u.setEmail(request.getParameter("email"));
-        u.setSenha(request.getParameter("senha"));
+        Usuario u = new Usuario(nome, sobrenome, apelido, email,senha);
             
         try {
             usuarioDAO dao = new usuarioDAO();

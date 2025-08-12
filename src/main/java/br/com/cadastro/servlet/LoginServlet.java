@@ -31,7 +31,8 @@ public class LoginServlet extends HttpServlet {
 			sessao.setAttribute("usuarioLogado", usuario);
 			response.sendRedirect("sucesso.jsp");
 		}else {
-			response.getWriter().println("Email ou senha invalidos");
+			request.setAttribute("erro","Email ou senha inválidos.");
+			request.getRequestDispatcher("login-usuario.jsp").forward(request, response);
 		}
 	}
 }

@@ -1,6 +1,0 @@
-br\com\cadastro\modelo\Usuario.class
-br\com\cadastro\util\testeDeConecxao.class
-br\com\cadastro\dao\usuarioDAO.class
-br\com\cadastro\servlet\CadastroServlet.class
-br\com\cadastro\servlet\LoginServlet.class
-br\com\cadastro\util\Conexao.class
