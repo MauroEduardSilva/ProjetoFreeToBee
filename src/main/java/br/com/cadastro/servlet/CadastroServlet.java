@@ -17,6 +17,7 @@ public class CadastroServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String nome = request.getParameter("nome");
@@ -30,15 +31,16 @@ public class CadastroServlet extends HttpServlet {
         try {
             usuarioDAO dao = new usuarioDAO();
             dao.salvar(u);
-            response.sendRedirect("sucesso.jsp");
+            request.getRequestDispatcher("/WEB-INF/views/sucesso.jsp").forward(request, response);
 
         } catch (SQLException e) {
             e.printStackTrace();
             response.getWriter().println("Erro ao salvar: " + e.getMessage());
+            //request.getRequestDispatcher("/WEB-INF/views/erro.jsp").forward(request, response);
         }
     }
-
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+    	request.getRequestDispatcher("/WEB-INF/views/cadastro-usuario.jsp").forward(request, response);
     }
 }
