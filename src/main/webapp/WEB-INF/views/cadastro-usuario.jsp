@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -27,7 +28,7 @@
         <label>Confirmar Senha:</label>
         <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
 	
-		<p>Já possui uma conta?<a href="login-usuario.jsp">Inicie uma sessão</a></p>
+		<p>Já possui uma conta?<a href="${pageContext.request.contextPath}/login">Inicie uma sessão</a></p>
 		
         <button type="submit">Enviar</button><br>
          <button type="reset">Limpar</button>
