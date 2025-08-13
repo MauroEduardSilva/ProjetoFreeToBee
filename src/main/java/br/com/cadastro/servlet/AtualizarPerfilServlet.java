@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import br.com.cadastro.dao.usuarioDAO;
+import br.com.cadastro.dao.UsuarioDAO;
 import br.com.cadastro.modelo.Usuario;
 
 @WebServlet("/atualizar-perfil")
@@ -24,6 +24,7 @@ public class AtualizarPerfilServlet extends HttpServlet {
 		
 		if (sessao == null || sessao.getAttribute("usuarioLogado") == null) {
 			response.sendRedirect(request.getContextPath() + "/login-usuario.jsp");
+			return;
 		}
 		
 		Usuario usuario = (Usuario) sessao.getAttribute("usuarioLogado");
@@ -42,7 +43,7 @@ public class AtualizarPerfilServlet extends HttpServlet {
 			usuario.setSenha(novaSenha);
 		}
 		
-		usuarioDAO dao = new usuarioDAO();
+		UsuarioDAO dao = new UsuarioDAO();
 		dao.atualizarUsuario(usuario);
 		
 		sessao.setAttribute("usuarioLogado", usuario);

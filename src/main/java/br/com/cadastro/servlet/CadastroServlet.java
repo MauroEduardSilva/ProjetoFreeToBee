@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.cadastro.dao.usuarioDAO;
+import br.com.cadastro.dao.UsuarioDAO;
 import br.com.cadastro.modelo.Usuario;
 
 @WebServlet("/cadastro")
@@ -29,7 +29,7 @@ public class CadastroServlet extends HttpServlet {
         Usuario u = new Usuario(nome, sobrenome, apelido, email,senha);
             
         try {
-            usuarioDAO dao = new usuarioDAO();
+            UsuarioDAO dao = new UsuarioDAO();
             dao.salvar(u);
             request.getRequestDispatcher("/WEB-INF/views/sucesso.jsp").forward(request, response);
 

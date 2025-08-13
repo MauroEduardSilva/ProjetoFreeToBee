@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import br.com.cadastro.modelo.Usuario;
 import br.com.cadastro.util.Conexao;
 
-public class usuarioDAO {
+public class UsuarioDAO {
 	
 	public Usuario verificarUsuario(String email, String senha) {
 	    Usuario usuario = null;

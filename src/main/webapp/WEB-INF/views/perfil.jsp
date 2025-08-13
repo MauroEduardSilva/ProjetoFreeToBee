@@ -21,10 +21,10 @@
 	
 	<form action="atualizar-perfil" method="post">
 		<label>Nome:</label>
-		<input type="text" nome="nome" value="${usuario.nome}" required><br>
+		<input type="text" name="nome" value="${usuario.nome}" required><br>
 		
 		<label>Sobrenome:</label>
-		<input type="text" nome="sobrenome" value="${usuario.sobrenome}" required><br>
+		<input type="text" name="sobrenome" value="${usuario.sobrenome}" required><br>
 		
 		<button type="submit">Atualizar</button>
 	</form>

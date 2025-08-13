@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import br.com.cadastro.dao.usuarioDAO;
+import br.com.cadastro.dao.UsuarioDAO;
 import br.com.cadastro.modelo.Usuario;
 
 
@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String senha = request.getParameter("senha");
 		
-		usuarioDAO dao = new usuarioDAO ();
+		UsuarioDAO dao = new UsuarioDAO ();
 		Usuario usuario = dao.verificarUsuario(email, senha);
 		
 		if(usuario != null) {
