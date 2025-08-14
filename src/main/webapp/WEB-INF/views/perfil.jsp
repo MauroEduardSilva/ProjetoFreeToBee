@@ -17,7 +17,9 @@
 	<title>Perfil do Usuario</title>
 </header>
 <body>
-	<h1>Perfil do ${usuario.nome}</h1>
+	<h1>Perfil do ${usuarioLogado.nome} ${usuarioLogado.sobrenome}</h1>
+	
+	<%@ include file="/WEB-INF/views/header.jsp" %>
 	
 	<form action="atualizar-perfil" method="post">
 		<label>Nome:</label>
