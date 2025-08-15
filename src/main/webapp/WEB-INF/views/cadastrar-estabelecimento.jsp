@@ -6,11 +6,30 @@
 	<title>Cadastrar novo estabelecimento</title>
 </head>
 <body>
+	<%@ include file="/WEB-INF/views/header-logado.jsp" %>
+	
 	<p> > Cadastrar novo estabelecimento </p>
 	
 	<form action="cadastrarEstabelecimento" method="post">
 		<label for="nome">Nome do estabelecimento: </label><br>
 		<input type="text" name="nome" id="nome" required><br>
+		<label for="tipo">Tipo:</label><br>
+		<select name="tipo" id="tipo">
+			<option value="MERCADO">Mercado</option>
+			<option value="LOJA">Loja</option>
+			<option value="FARMACIA">Farmacia</option>
+			<option value="RESTAURANTE">Restaurante</option>
+			<option value="BAR">BAR</option>
+			<option value="CASA_NOTURNA">Casa Noturna</option>
+			<option value="TEATRO">Teatro</option>
+			<option value="SHOPPING">Shopping</option>
+			<option value="MUSEU">Museu</option>
+			<option value="HOTEL">Hotel</option>
+			<option value="LIVRARIA">Livraria</option>
+			<option value="Academia">Academia</option>
+			<option value="Clinica">Clinica</option>
+		</select><br>
+		
 		<label for="cnpj">CNPJ:</label><br>
 		<input type="text" name="cnpj" id="cnpj"><br>
 		<label for="horario">Horario de funcionamento:</label><br>
@@ -24,6 +43,7 @@
 		
 		<label for="nome">Cidade:</label><br>
 		<input type="text" name="cidade" id="cidade"><br>
+
 		
 		<label for="nome">Bairro:</label><br>
 		<input type="text" name="bairro" id="bairro"><br>

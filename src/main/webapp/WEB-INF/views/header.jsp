@@ -4,7 +4,7 @@
 <header>
 	<nav>
 		<a href="${pageContext.request.contextPath}/inicio">Inicio</a><br>
-		<a href="${pageContext.request.contextPath}/cadastrar-estabelecimento.jsp">Estabelecimento</a><br>
+		<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a><br>
 		<a href="${pageContext.request.contextPath}/ranking">Ranking</a><br>
 	</nav>
 </header>

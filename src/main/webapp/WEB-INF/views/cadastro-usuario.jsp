@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>Cadastro</h1>
+    
+    <%@ include file="/WEB-INF/views/header.jsp" %>
  
     <form action="cadastro" method="post">
         <label>Nome:</label>

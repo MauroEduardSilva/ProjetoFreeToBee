@@ -8,6 +8,8 @@
 <body>
 	<h1>FreeToBee</h1>
 	
+	<%@ include file="/WEB-INF/views/header-logado.jsp" %>
+	
 	<p>Somos uma grupo de Desenvolvedores sem finslucrativos comprometido com a construção de uma sociedade
 	mais justa, inclusiva e segura para a comunidade LGBTQIAPN+.</p>
 	<p>Nosso projeto nasceu na necessidade de dar visibilidade a estabelecimento que acolhem a diversidade

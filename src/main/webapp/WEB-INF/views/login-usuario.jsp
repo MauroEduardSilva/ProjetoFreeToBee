@@ -13,6 +13,8 @@
     	<p style="color: red;">${erro}</p>
     </c:if>
     
+    <%@ include file="/WEB-INF/views/header.jsp" %>
+    
     <form action="login" method="post">
     
     	<label for="email">Email:</label>
