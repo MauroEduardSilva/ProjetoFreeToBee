@@ -14,7 +14,7 @@ public class UsuarioDAO {
 	    Usuario usuario = null;
 	
 	    try (Connection conn = Conexao.getConexao()) {
-	        String sql = "SELECT * FROM usuarios WHERE email = ? AND senha = ?";
+	        String sql = "SELECT * FROM usuario WHERE email = ? AND senha = ?";
 	        PreparedStatement stmt = conn.prepareStatement(sql);
 	        stmt.setString(1, email);
 	        stmt.setString(2, senha);
@@ -39,7 +39,7 @@ public class UsuarioDAO {
 	}
 	
 	public void salvar(Usuario usuario) throws SQLException {
-	    String sql = "INSERT INTO usuarios (nome, sobrenome, apelido, email, senha) VALUES (?, ?, ?, ?, ?)";
+	    String sql = "INSERT INTO usuario (nome, sobrenome, apelido, email, senha) VALUES (?, ?, ?, ?, ?)";
 	    
 	    try (Connection conn = Conexao.getConexao();
 	         PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -55,7 +55,7 @@ public class UsuarioDAO {
 	}
 	
 	public void atualizarUsuario (Usuario usuario) {
-		String sql = "UPDATE usuarios SET nome = ?, sobrenome = ?, apelido = ?, senha = ? where email = ?";
+		String sql = "UPDATE usuario SET nome = ?, sobrenome = ?, apelido = ?, senha = ? where email = ?";
 		
 		try (Connection con = Conexao.getConexao();
 				PreparedStatement stmt = con.prepareStatement(sql)){

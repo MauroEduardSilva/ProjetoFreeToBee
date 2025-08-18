@@ -6,6 +6,7 @@ public class Estabelecimento {
 	private long id;
 	private String nome;
 	private String email;
+	private String tipo;
 	private String telefone;
 	private String CNPJ;
 	private int curtidas;
@@ -13,10 +14,11 @@ public class Estabelecimento {
 	
 	public Estabelecimento () {}
 	
-	public Estabelecimento(long id, String nome, String email, String telefone, String CNPJ) {
+	public Estabelecimento(long id, String nome, String email, String tipo, String telefone, String CNPJ) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
+		this.tipo = tipo;
 		this.telefone = telefone;
 		this.CNPJ = CNPJ;
 	}
@@ -68,6 +70,13 @@ public class Estabelecimento {
 	}
 	public void setDataCadastro(Date dataCadastro) {
 	    this.dataCadastro = dataCadastro;
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	
 }
