@@ -13,7 +13,7 @@ import br.com.cadastro.model.Endereco;
 import br.com.cadastro.model.Estabelecimento;
 import br.com.cadastro.util.Conexao;
 
-public class EditarEstabelecimentoServlet extends HttpServlet {
+public class CadastrarEstabelecimentoServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		int idEstabelecimento = Integer.parseInt(request.getParameter("id"));

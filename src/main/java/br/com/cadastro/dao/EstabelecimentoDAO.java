@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.cadastro.model.Endereco;
 import br.com.cadastro.model.Estabelecimento;
@@ -66,4 +68,38 @@ public class EstabelecimentoDAO {
     	stmt.setLong(6, e.getId());
     	stmt.executeUpdate();
     }
+    public List<Estabelecimento> buscarRecentes() throws SQLException {
+    	List<Estabelecimento> lista = new ArrayList<>();
+    	String sql = "SELECT * FROM estabelecimento ORDER BY id DESC LIMIT 10";
+    	
+    	try (PreparedStatement stmt = connection.prepareStatement(sql);
+    		ResultSet rs = stmt.executeQuery()) {
+    		
+    		while (rs.next()) {
+    			Estabelecimento e = new Estabelecimento();
+    			e.setId(rs.getLong("id"));
+    			e.setNome(rs.getString("nome"));
+    			e.setEmail(rs.getString("email"));
+    			e.setTelefone(rs.getString("telefone"));
+    			e.setCNPJ(rs.getString("cnpj"));
+    			e.setTipo(rs.getString("tipo"));
+    			lista.add(e);
+    		}
+    	}
+    	return lista;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

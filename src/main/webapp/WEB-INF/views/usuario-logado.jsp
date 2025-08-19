@@ -15,5 +15,11 @@
 	
 	
 	<h2>Cadastro Recentemente</h2>
+	<ul>
+		<c:forEach var="est" items="${recentes}">
+			<li>${est.nome} - ${est.tipo} - ${est.email}</li>
+		</c:forEach>
+		
+	</ul>
 </body>
 </html>
