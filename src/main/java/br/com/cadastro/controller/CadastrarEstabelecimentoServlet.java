@@ -52,7 +52,7 @@ public class CadastrarEstabelecimentoServlet extends HttpServlet {
         	Connection conn = Conexao.getConexao();
         	EstabelecimentoDAO dao = new EstabelecimentoDAO(conn);
         	dao.atualizar(estabelecimento, endereco);
-        	response.sendRedirect("/WEB-INF/views/usuario-logado.jsp");
+        	response.sendRedirect("listaRecentesEstabelecimento");
         }catch (Exception ex) {
         	ex.printStackTrace();
         	response.sendRedirect("erro.jsp");

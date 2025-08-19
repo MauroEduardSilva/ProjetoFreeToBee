@@ -55,6 +55,6 @@ public class EstabelecimentoServlet extends HttpServlet {
             throw new ServletException(e);
         }
 
-        response.sendRedirect("/WEB-INF/views/usuario-logado.jsp");
+        response.sendRedirect("listaRecentesEstabelecimento");
     }
 }

@@ -88,6 +88,29 @@ public class EstabelecimentoDAO {
     	}
     	return lista;
     }
+    public List<Estabelecimento> buscarPorNome(String nome) throws SQLException {
+        List<Estabelecimento> lista = new ArrayList<>();
+        String sql = "SELECT * FROM estabelecimento WHERE nome LIKE ? ORDER BY nome ASC";
+
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, "%" + nome + "%");
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    Estabelecimento e = new Estabelecimento();
+                    e.setId(rs.getLong("id"));
+                    e.setNome(rs.getString("nome"));
+                    e.setEmail(rs.getString("email"));
+                    e.setTelefone(rs.getString("telefone"));
+                    e.setCNPJ(rs.getString("cnpj"));
+                    e.setTipo(rs.getString("tipo"));
+                    lista.add(e);
+                }
+            }
+        }
+        return lista;
+    }
+
     
     
     
