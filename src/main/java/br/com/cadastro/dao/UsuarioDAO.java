@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import br.com.cadastro.factory.Conexao;
 import br.com.cadastro.model.Usuario;
-import br.com.cadastro.util.Conexao;
 
 public class UsuarioDAO {
 	

@@ -11,16 +11,18 @@ public class Estabelecimento {
 	private String CNPJ;
 	private int curtidas;
 	private Date dataCadastro;
+	private String endereco;
 	
 	public Estabelecimento () {}
 	
-	public Estabelecimento(long id, String nome, String email, String tipo, String telefone, String CNPJ) {
+	public Estabelecimento(long id, String nome, String email, String tipo, String telefone, String CNPJ, String Endereco) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.tipo = tipo;
 		this.telefone = telefone;
 		this.CNPJ = CNPJ;
+		this.endereco = endereco;
 	}
 
 	public long getId() {
@@ -77,6 +79,13 @@ public class Estabelecimento {
 	}
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+	
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	
 }

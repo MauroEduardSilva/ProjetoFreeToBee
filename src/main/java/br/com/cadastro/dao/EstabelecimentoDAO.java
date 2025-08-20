@@ -110,6 +110,26 @@ public class EstabelecimentoDAO {
         }
         return lista;
     }
+    public Estabelecimento buscarPorId(long id) throws SQLException {
+    	String sql = "select * from estabelecimento where id = ?";
+    	
+    	try(PreparedStatement stmt = connection.prepareStatement(sql)) {
+    		stmt.setLong(1, id);
+    		try(ResultSet rs = stmt.executeQuery()) {
+    			if (rs.next()) {
+    				Estabelecimento e = new Estabelecimento();
+    				e.setId(rs.getLong("id"));
+    				e.setNome(rs.getString("nome"));
+    				e.setEmail(rs.getString("email"));
+    				e.setTelefone(rs.getString("telefone"));
+    				e.setCNPJ(rs.getString("CNPJ"));
+    				e.setTipo(rs.getString("tipo"));
+    				return e;
+    			}
+    		}
+    	}
+    	return null;
+    }
 
     
     
