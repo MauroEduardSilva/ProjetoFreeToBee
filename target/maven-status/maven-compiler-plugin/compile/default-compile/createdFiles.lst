@@ -10,6 +10,7 @@ br\com\cadastro\model\Estabelecimento.class
 br\com\cadastro\controller\estabelecimento\ListaRecentesEstabelecimento.class
 br\com\cadastro\model\Usuario.class
 br\com\cadastro\controller\usuario\CadastroUsuarioServlet.class
+br\com\cadastro\controller\estabelecimento\AbrirAvaliacaoServlet.class
 br\com\cadastro\model\Endereco.class
 br\com\cadastro\controller\usuario\AtualizarPerfilServlet.class
 br\com\cadastro\model\TipoEstabelecimento.class

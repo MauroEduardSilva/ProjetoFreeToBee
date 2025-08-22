@@ -7,8 +7,6 @@
     <title>Cadastro de Usuário</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    
     <%@ include file="/WEB-INF/views/cabecalho/header.jsp" %>
  
     <form action="cadastro" method="post">

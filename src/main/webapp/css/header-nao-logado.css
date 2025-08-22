@@ -1,0 +1,74 @@
+\\verificar as outras paginas
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.topo-pagina {
+	background-color: #fffce0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	position: relative;
+}
+
+.logo-freetobee {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 10px;
+}
+
+.logo-freetobee .highlight {
+	color: #e0b100;
+	
+}
+.menu-hamburguer {
+	position: absolute;
+	left: 20px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.menu {
+	background-color: #e0b100;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+	transition: background-color 0.3s;
+}
+
+.menu a:hover {
+	background-color: #c89c00;
+	border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

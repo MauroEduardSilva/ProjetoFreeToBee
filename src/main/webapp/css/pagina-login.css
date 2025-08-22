@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+	max-width: 320px;
+	margin: 80px auto;
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.login-container form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+label {
+	text-align: left;
+	display: block;
+	margin-bottom: 5px;
+}
