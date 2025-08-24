@@ -5,7 +5,7 @@
 
 
 <header class="topo-pagina">
-	<div class="menu-hamburguer" onclick="abrirMenu()">&#9776</div>
+	<div class="menu-hamburguer" onclick="abrirMenu()">#9776</div>
 	
 	<div class="logo-freetobee">
 		<span class="bold">FreeTo</span><span class="highlight">Bee!</span>
