@@ -1,58 +1,36 @@
 \\verificar as outras paginas
-
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-	font-family: Arial, sans-serif;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .topo-pagina {
-	background-color: #fffce0;
+	background-color: #c89c00;
+	padding: 15px 20px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	height: 60px;
-	position: relative;
-}
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+}	
 
-.logo-freetobee {
-	font-size: 24px;
-	font-weight: bold;
-	margin: 0;
-	padding: 0 10px;
-}
-
-.logo-freetobee .highlight {
-	color: #e0b100;
-	
-}
 .menu-hamburguer {
-	position: absolute;
-	left: 20px;
 	font-size: 24px;
 	cursor: pointer;
+	color: black;
 }
 
 .menu {
-	background-color: #e0b100;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 10px 0;
-	font-weight: bold;
+	gap: 40px;
 }
 
 .menu a {
 	color: white;
 	text-decoration: none;
-	padding: 5px 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
 	transition: background-color 0.3s;
 }
 

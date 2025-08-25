@@ -5,17 +5,13 @@
 
 
 <header class="topo-pagina">
-	<div class="menu-hamburguer" onclick="abrirMenu()">#9776</div>
-	
-	<div class="logo-freetobee">
-		<span class="bold">FreeTo</span><span class="highlight">Bee!</span>
-	</div>
-</header>
+	<div class="menu-hamburguer" onclick="abrirMenu()">&#9776;</div>
 
-<nav id="menu" class="menu">
-	<a href="${pageContext.request.contextPath}/inicio">Inicio</a><br>
-	<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a><br>
-	<a href="${pageContext.request.contextPath}/ranking">Ranking</a><br>
-</nav>
+	<nav class="menu">
+		<a href="${pageContext.request.contextPath}/inicio">Inicio</a><br>
+		<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a><br>
+		<a href="${pageContext.request.contextPath}/ranking">Ranking</a><br>
+	</nav>
+</header>
 
 <script src="${pageContext.request.contextPath}/js/script.js"></script>

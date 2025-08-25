@@ -5,7 +5,7 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/usuario/pagina-login.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/pagina-login.css">
     <title>Login do Usuario</title>
 </head>
 <body>
