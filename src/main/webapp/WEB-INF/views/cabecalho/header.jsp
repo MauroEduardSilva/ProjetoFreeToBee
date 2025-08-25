@@ -3,15 +3,27 @@
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/header-nao-logado.css">
 
-
-<header class="topo-pagina">
-	<div class="menu-hamburguer" onclick="abrirMenu()">&#9776;</div>
-
-	<nav class="menu">
-		<a href="${pageContext.request.contextPath}/inicio">Inicio</a><br>
-		<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a><br>
-		<a href="${pageContext.request.contextPath}/ranking">Ranking</a><br>
-	</nav>
-</header>
+<body>
+	<header>
+		<nav id="topo-pagina">
+			<div class="menu-hamburguer" onclick="abrirMenu()">&#9776;</div>
+		
+			<ul id="menu">
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/inicio">Inicio</a>
+				</li>
+				
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a>
+				</li>
+				
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/ranking">Ranking</a>
+				</li>
+				
+			</ul>
+		</nav>
+	</header>
+</body>
 
 <script src="${pageContext.request.contextPath}/js/script.js"></script>

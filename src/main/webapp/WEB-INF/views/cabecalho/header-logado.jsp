@@ -1,12 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<header>
-	<nav>
-		<a href="${pageContext.request.contextPath}/inicio">Inicio</a><br>
-		<a href="${pageContext.request.contextPath}/cadastroEstabelecimento">Estabelecimento</a><br>
-		<a href="${pageContext.request.contextPath}/favorito">Favorito</a><br>
-		<a href="${pageContext.request.contextPath}/conquista">Conquista</a><br>
-		<a href="${pageContext.request.contextPath}/ranking">Ranking</a><br>
-	</nav>
-</header>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/header-logado.css">
+
+<body>
+	<header>
+		<nav id="topo-pagina">
+			<div class="menu-hamburguer" onclick="abrirMenu()">&#9776;</div>
+		
+			<ul id="menu">
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/inicio">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a>
+				</li>
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/favorito">Favorito</a>
+				</li>
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/Conquista">Conquista</a>
+				</li>
+				<li class="nav-item">
+					<a href="${pageContext.request.contextPath}/ranking">Ranking</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+
