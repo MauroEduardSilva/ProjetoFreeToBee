@@ -4,6 +4,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
     <title>Cadastro de Usuário</title>
 </head>
 <body>

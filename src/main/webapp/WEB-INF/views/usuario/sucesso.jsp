@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>Sucesso</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
     <h2>Cadastro realizado com sucesso!</h2>

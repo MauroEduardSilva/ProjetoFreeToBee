@@ -5,6 +5,7 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 	<title>Página Inicial</title>
 </head>
 <body>

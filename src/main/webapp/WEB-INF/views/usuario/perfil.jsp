@@ -14,6 +14,7 @@
 <html lang="pt-BR">
 <header>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 	<title>Perfil do Usuario</title>
 </header>
 <body>

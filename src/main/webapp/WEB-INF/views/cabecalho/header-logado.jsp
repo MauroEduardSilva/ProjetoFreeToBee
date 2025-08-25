@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/header-logado.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/cabecalho/header-logado.css">
 
 <body>
 	<header>
@@ -13,7 +13,7 @@
 					<a href="${pageContext.request.contextPath}/inicio">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a>
+					<a href="${pageContext.request.contextPath}/cadastrarEstabelecimento">Estabelecimento</a>
 				</li>
 				<li class="nav-item">
 					<a href="${pageContext.request.contextPath}/favorito">Favorito</a>

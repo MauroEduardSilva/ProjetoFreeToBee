@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Avaliar Estabelecimento</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/avaliar-estabelecimento.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estabelecimento/avaliar-estabelecimento.css">
 </head>
 <body>
 
