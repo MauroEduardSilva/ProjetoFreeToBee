@@ -14,10 +14,10 @@ body {
 #topo-pagina {
   background-color: #e0b100;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
-  position: relative;
+  padding: 0 40px;
 }
 
 .menu-hamburguer {
@@ -30,13 +30,10 @@ body {
 
 #menu {
   display: flex;
-  gap: 100px;
+  gap: 150px;
   list-style: none;
-  margin: 0;
   padding: 0;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
+  margin-left: 10rem;
 }
 
 #menu a {
@@ -53,7 +50,23 @@ body {
 
 #logo {
 	display: flex;
-	justify-content: center;
- 	height: 70px;
- 	overflow: hidden;
+	align-items: center;
+	cursor: pointer;
 }
+
+#logo img {
+	height: 80px;
+	margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

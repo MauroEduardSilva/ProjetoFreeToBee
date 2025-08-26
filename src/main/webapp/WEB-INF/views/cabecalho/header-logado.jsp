@@ -27,7 +27,7 @@
 			</ul>
 			
 			<div id="logo">
-				<img src="/css/logo-nova.svg">
+				<img src="${pageContext.request.contextPath}/css/logo-nova.svg">
 			</div>
 		</nav>
 	</header>

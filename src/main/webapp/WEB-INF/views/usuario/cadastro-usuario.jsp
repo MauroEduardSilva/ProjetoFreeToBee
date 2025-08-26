@@ -5,35 +5,52 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/usuario/cadastrar-usuario.css">
     <title>Cadastro de Usuário</title>
 </head>
 <body>
     <%@ include file="/WEB-INF/views/cabecalho/header.jsp" %>
- 
-    <form action="cadastro" method="post">
-        <label>Nome:</label>
-        <input type="text" name="nome"><br>
-
-        <label>Sobrenome:</label>
-        <input type="text" name="sobrenome"><br>
-        
-        <label>Apelido:</label>
-        <input type="text" name="apelido"><br>
-
-        <label>Email:</label>
-        <input type="email" name="email"><br>
-
-        <label>Senha:</label>
-        <input type="password" id="senha" name="senha"><br>
-
-        <label>Confirmar Senha:</label>
-        <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
 	
-		<p>Já possui uma conta?<a href="${pageContext.request.contextPath}/login">Inicie uma sessão</a></p>
-		
-        <button type="submit">Enviar</button><br>
-         <button type="reset">Limpar</button>
-    </form>
-
+	<div class="container-formulario">
+	    <form action="cadastro" method="post">
+	    	<div class="formulario">
+	    		<div class="formulario-grupo">
+	    			<label>Nome*</label>
+	        		<input type="text" id="nome" name="nome" placeholder="" required>
+	    		</div>
+	    		<div class="formulario-grupo">
+	    			<label>Email*</label>
+	        		<input type="email" id="email "name="email" placeholder="" required>
+	    		</div>
+	    	</div>
+	    	<div class="formulario">
+	    		<div class="formulario-grupo">
+	    			<label>Sobrenome*</label>
+	        		<input type="text" id="sobrenome" name="sobrenome" placeholder="">
+	    		</div>
+	    		<div class="formulario-grupo">
+	    			<label>Senha*</label>
+	        		<input type="password" id="senha" name="senha" placeholder="">
+	    		</div>
+	    	</div>
+	    	<div class="formulario">
+	    		<div class="formulario-grupo">
+	    			<label>Apelido:</label>
+	        		<input type="text" id="apelido" name="apelido" placeholder="">
+	    		</div>
+	    		<div class="formulario-grupo">
+	    			<label>Confirmar Senha:</label>
+	        		<input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="" required>
+	    		</div>
+	    	</div>
+			
+			<div class="buttons">
+				<p>Já possui uma conta?<a href="${pageContext.request.contextPath}/login">Inicie uma sessão</a></p>
+				
+				<button type="submit">Próximo</button>
+	         	<button type="reset">Limpar</button
+			</div>
+	    </form>
+    </div>
 </body>
 </html>
