@@ -25,7 +25,10 @@
 					<a href="${pageContext.request.contextPath}/ranking">Ranking</a>
 				</li>
 			</ul>
+			
+			<div id="logo">
+				<img src="/css/logo-nova.svg">
+			</div>
 		</nav>
 	</header>
 </body>
-

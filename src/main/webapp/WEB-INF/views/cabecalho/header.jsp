@@ -7,7 +7,7 @@
 	<header>
 		<nav id="topo-pagina">
 			<div class="menu-hamburguer" onclick="abrirMenu()">&#9776;</div>
-		
+	
 			<ul id="menu">
 				<li class="nav-item">
 					<a href="${pageContext.request.contextPath}/inicio">Inicio</a>
@@ -20,8 +20,10 @@
 				<li class="nav-item">
 					<a href="${pageContext.request.contextPath}/ranking">Ranking</a>
 				</li>
-				
-			</ul>
+			</ul>		
+			<div id="logo">
+				<img src="./css/logo-nova.svg">
+			</div>
 		</nav>
 	</header>
 </body>
