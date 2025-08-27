@@ -9,7 +9,7 @@
 			<div class="menu-hamburguer" onclick="abrirMenu()">&#9776;</div>
 			<ul id="menu">
 			    <li class="nav-item"><a href="${pageContext.request.contextPath}/inicio">Inicio</a></li>
-			    <li class="nav-item"><a href="${pageContext.request.contextPath}/abrirCadastroEstabelecimento">Estabelecimento</a></li>
+			    <li class="nav-item"><a href="${pageContext.request.contextPath}/estabelecimento">Estabelecimento</a></li>
 			    <li class="nav-item"><a href="${pageContext.request.contextPath}/ranking">Ranking</a></li>
 			</ul>
 			<div id="logo">
