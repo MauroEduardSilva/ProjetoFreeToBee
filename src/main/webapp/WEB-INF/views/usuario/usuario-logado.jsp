@@ -40,9 +40,11 @@
 	<h2>Cadastro Recentemente</h2>
 	<ul>
 		<c:forEach var="est" items="${recentes}">
-			<li>${est.nome} - ${est.tipo} - ${est.email}</li>
+			<li>
+				<img src="${pageContext.request.contextPath}/imagemFoto?id=${est.id}" alt="Foto de ${est.nome}" style="width:100px; height:100px; object-fit:cover; border-radius:8px;"/><br>
+				${est.nome} - ${est.tipo} - ${est.email}
+			</li>
 		</c:forEach>
-		
 	</ul>
 </body>
 </html>

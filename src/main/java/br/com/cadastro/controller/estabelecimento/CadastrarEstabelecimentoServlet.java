@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.sql.Connection;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +14,7 @@ import br.com.cadastro.factory.Conexao;
 import br.com.cadastro.model.Endereco;
 import br.com.cadastro.model.Estabelecimento;
 
-@WebServlet("/cadastrarEstabelecimento")
+
 public class CadastrarEstabelecimentoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

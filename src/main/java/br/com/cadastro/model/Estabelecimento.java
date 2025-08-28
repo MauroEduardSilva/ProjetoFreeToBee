@@ -15,7 +15,7 @@ public class Estabelecimento {
 	
 	public Estabelecimento () {}
 	
-	public Estabelecimento(long id, String nome, String email, String tipo, String telefone, String CNPJ, String Endereco) {
+	public Estabelecimento(long id, String nome, String email, String tipo, String telefone, String CNPJ, String endereco) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;

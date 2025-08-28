@@ -14,19 +14,30 @@ import br.com.cadastro.dao.EstabelecimentoDAO;
 import br.com.cadastro.factory.Conexao;
 import br.com.cadastro.model.Estabelecimento;
 
-@WebServlet("/listaRecentesEstabelecimento")
+@WebServlet("/listarRecentesEstabelecimento")
 public class ListaRecentesEstabelecimento extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-			Connection conn = Conexao.getConexao();
-			EstabelecimentoDAO dao = new EstabelecimentoDAO(conn);
-			List<Estabelecimento> recentes = dao.buscarRecentes();
+			@SuppressWarnings("unchecked")
+			List<Estabelecimento> recentes = (List<Estabelecimento>) getServletContext().getAttribute("recentes");
+			
+			if(recentes == null) {
+				Connection conn = Conexao.getConexao();
+				EstabelecimentoDAO dao = new EstabelecimentoDAO(conn);
+				recentes = dao.buscarRecentes();
+				getServletContext().setAttribute("recentes", recentes);
+			}
+			
 			request.setAttribute("recentes", recentes);
 			request.getRequestDispatcher("/WEB-INF/views/usuario/usuario-logado.jsp").forward(request, response);
+			
+			
 		}catch (Exception e) {
 			e.printStackTrace();
-			response.sendRedirect("erro.jsp");
+			request.setAttribute("erro", e.getMessage());
+			request.getRequestDispatcher("/WEB-INF/views/erro.jsp").forward(request, response);
 		}
 	}
 

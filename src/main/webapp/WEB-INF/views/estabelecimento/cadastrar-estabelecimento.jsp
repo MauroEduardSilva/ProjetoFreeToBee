@@ -13,7 +13,7 @@
 	
 	
 	<div class="container">
-		<form action="cadastrarEstabelecimento" method="post">
+		<form action="cadastrarEstabelecimento" method="post" enctype="multipart/form-data">
 			<div class="grid-coluna">
 				<div class="coluna">
 					<p>Informações gerais</p><br><br>
@@ -54,10 +54,9 @@
 						</div>
 						
 					</div>
-					<div class="formulario-estabelecimento">
-						<div class="buttons">
-							<button type="submit">Selecionar imagem</button>
-						</div>
+					<div class="formulario-grupo">
+    					<label>Imagem do Estabelecimento*</label>
+    					<input type="file" name="foto" id="foto" accept="image/*" required>
 					</div>
 				</div>
 				<div class="coluna">
