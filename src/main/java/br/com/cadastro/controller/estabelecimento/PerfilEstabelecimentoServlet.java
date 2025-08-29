@@ -17,7 +17,10 @@ import br.com.cadastro.model.Estabelecimento;
 
 @WebServlet("/perfilEstabelecimento")
 public class PerfilEstabelecimentoServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		
 		try {
 			int id = Integer.parseInt(request.getParameter("id"));

@@ -6,45 +6,32 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/usuario/pagina-inicial-logado.css">
 	<title>Página Inicial</title>
 </head>
 <body>
-	<%@ include file="/WEB-INF/views/cabecalho/header-logado.jsp" %>
+	<%@ include file="/views/cabecalho/header-logado.jsp" %>
 	
-	<form action="pesquisarEstabelecimento" method="get">
-    	<input type="text" name="nome" placeholder="Digite o nome..." required>
-    	<button type="submit">Buscar</button>
-	</form>
-	
-	<h2>Resultado da pesquisa</h2>
-	<c:if test="${not empty resultados}">
-	    <ul>
-	        <c:forEach var="est" items="${resultados}">
-	            <li>
-	            	<a href="perfilEstabelecimento?id=${est.id}">
-	            		${est.nome} - ${est.tipo} - ${est.email}
-	            	</a>
-	            </li>
-	        </c:forEach>
-	    </ul>
-	</c:if>
-	
-	<c:if test="${empty resultados and param.nome != null}">
-	    <p>Nenhum estabelecimento encontrado.</p>
-	</c:if>
-
-	<h2>Destaque da semana</h2>
-	
-	
-	
-	<h2>Cadastro Recentemente</h2>
-	<ul>
-		<c:forEach var="est" items="${recentes}">
-			<li>
-				<img src="${pageContext.request.contextPath}/imagemFoto?id=${est.id}" alt="Foto de ${est.nome}" style="width:100px; height:100px; object-fit:cover; border-radius:8px;"/><br>
-				${est.nome} - ${est.tipo} - ${est.email}
-			</li>
-		</c:forEach>
-	</ul>
+	<div class="container">
+		<h2>Destaque da semana</h2>
+		
+		
+		
+		<h2>Cadastro Recentemente</h2>
+		
+		<ul>
+			<c:forEach var="est" items="${recentes}">
+				<li>
+					<a href="${pageContext.request.contextPath}/perfilEstabelecimento?id=${est.id}">
+						<div class="container-img">
+							<div class="imagem-estabelecimento">
+								<img src="${pageContext.request.contextPath}/imagemFoto?id=${est.id}" alt="Foto de ${est.nome}"/>
+							</div>
+						</div>
+					</a>
+				</li>
+			</c:forEach>
+		</ul>
+	</div>
 </body>
 </html>
