@@ -10,7 +10,7 @@
 	<title>Página Inicial</title>
 </head>
 <body>
-	<%@ include file="/views/cabecalho/header-logado.jsp" %>
+	<%@ include file="/WEB-INF/views/cabecalho/header-logado.jsp" %>
 	
 	<div class="container">
 		<h2>Destaque da semana</h2>
