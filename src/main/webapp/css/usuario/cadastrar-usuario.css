@@ -15,7 +15,7 @@ form {
 	border-radius: 10px;
 	max-width: 800px;
 	width: 100%;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0px 0px rrgb(255, 255, 255)
 }
 
 form .formulario {
@@ -42,6 +42,13 @@ input[type="password"] {
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border-color: #ffcc00;
+ 	outline: none;
 }
 
 p {
@@ -80,4 +87,80 @@ button {
 button:hover {
 	background-color: #fdd835;
 }
+
+.passo-um {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto 30px auto;
+	padding-top: 8px;
+	max-width: 800px;
+}
+
+.ativar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin-top: 5px;
+	min-width: 120px;
+}
+
+.circulo {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: #f5f5f5;
+	border: 2px solid #ffd600;
+	color: #ffd600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 18px;
+	transition: all 0.3s ease;
+}
+
+.ativar span {
+	margin-top: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.linha {
+	width: 250px;
+	height: 3px;
+	background-color: black;
+	margin: 0 -5px;
+}
+
+.ativar.guia .circulo {
+	background-color: #ffd600;
+	color: white;
+}
+
+.ativar.completed + .linha {
+	background-color: #ffd600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

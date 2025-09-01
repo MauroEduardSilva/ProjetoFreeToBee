@@ -25,7 +25,7 @@ form {
 	width: 300px;
 	padding: 40px 20px;
 	border-radius: 8px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0px 0px rrgb(255, 255, 255);
 	background-color: #fff;
 }
 
@@ -45,10 +45,24 @@ input[type="password"] {
 	outline: none;
 }
 
-input[type="email"]::placeholder, 
-input[type="password"]::placeholder {
-	color: #aaa;
+input[type="email"], 
+input[type="password"],
+select {
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease;
 }
+
+input[type="email"]:focus, 
+input[type="password"]:focus,
+select:focus {
+	border-color: #ffcc00;
+	outline: none;
+}
+
 
 button[type="submit"] {
 	background-color: #ffe96a;
@@ -65,7 +79,6 @@ button[type="submit"]:hover {
 	background-color: #ffdf3c;
 }
 
-
 \\precisa criar um script para a menssagem de erro sumir da tela 
 
 .menssagem-erro {
@@ -79,7 +92,7 @@ button[type="submit"]:hover {
 p {
 	font-size: 14px;
 	margin-top: 20px;
-	text-aling: center;
+	text-align: center;
 }
 
 p a {

@@ -30,8 +30,8 @@ public class CadastroUsuarioServlet extends HttpServlet {
             
         try {
             UsuarioDAO dao = new UsuarioDAO();
-            dao.salvar(u);
-            request.getRequestDispatcher("/WEB-INF/views/usuario/sucesso.jsp").forward(request, response);
+            long idGerado = dao.salvarERatornarId(u);
+            response.sendRedirect(request.getContextPath() + "/foto?id=" + idGerado);
 
         } catch (SQLException e) {
             e.printStackTrace();

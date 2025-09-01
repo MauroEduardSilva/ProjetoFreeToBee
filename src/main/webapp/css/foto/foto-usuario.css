@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.container-foto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+}
+
+.foto-avatar {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 80px;
+	color: #888;
+	margin-bottom: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.editar-icone {
+	position: absolute;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	padding: 4px;
+	font-size: 14px;
+	
+}
+
+.icone-lapis {
+	font-size: 18px;
+	margin-left: 6px;
+	color: #888;
+	vertical-align: middle;
+	
+}
+
+.foto-label {
+	font-size: 28px;
+	margin-top: 8px;
+	color: #333;
+}
+
+.btn-cadastrar {
+	background-color: #fff3b0;
+	border: 1px solid #f0d000;
+	border-radius: 8px;
+	padding: 10px 30px;
+	font-weight: bold;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.btn-cadatrar:hover {
+	background-color: #ffe866;
+}
+
+
+
+
+
+
+
+

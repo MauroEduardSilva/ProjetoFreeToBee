@@ -13,6 +13,24 @@
 	
 	<div class="container-formulario">
 	    <form action="cadastro" method="post">
+	    
+	    	<div class="passo-um">
+	    		<div class="ativar guia">
+	    			<div class="circulo">1</div>
+	    			<span>INFORMAÇÕES PESSOAIS</span>
+	    		</div>
+	    		<div class="linha"></div>
+	    		<div class="ativar">
+	    			<div class="circulo">2</div>
+	    			<span>FOTO</span>
+	    		</div>
+	    		<div class="linha"></div>
+	    		<div class="ativar">
+	    			<div class="circulo">3</div>
+	    			<span>CONCLUÍDO</span>
+	    		</div>
+	    	</div><br><br><br><br>
+	    	
 	    	<div class="formulario">
 	    		<div class="formulario-grupo">
 	    			<label>Nome*</label>
@@ -48,7 +66,7 @@
 				<p>Já possui uma conta?<a href="${pageContext.request.contextPath}/login">Inicie uma sessão</a></p>
 				
 				<button type="submit">Próximo</button>
-	         	<button type="reset">Limpar</button
+	         	<button type="reset">Limpar</button>
 			</div>
 	    </form>
     </div>

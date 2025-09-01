@@ -1,5 +1,6 @@
 package br.com.cadastro.dao;
 
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -72,6 +73,47 @@ public class UsuarioDAO {
 		
 	}
 	
+	public long salvarERatornarId(Usuario usuario) throws SQLException {
+	    String sql = "INSERT INTO usuario (nome, sobrenome, apelido, email, senha) VALUES (?, ?, ?, ?, ?)";
+	    long idGerado = 0;
+
+	    try (Connection conn = Conexao.getConexao();
+	         PreparedStatement stmt = conn.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS)) {
+
+	        stmt.setString(1, usuario.getNome());
+	        stmt.setString(2, usuario.getSobrenome());
+	        stmt.setString(3, usuario.getApelido());
+	        stmt.setString(4, usuario.getEmail());
+	        stmt.setString(5, usuario.getSenha());
+
+	        stmt.executeUpdate();
+
+	        try (ResultSet rs = stmt.getGeneratedKeys()) {
+	            if (rs.next()) {
+	                idGerado = rs.getLong(1);
+	            }
+	        }
+	    }
+
+	    return idGerado;
+	}
+	public void salvarFotoUsuario(long idUsuario, InputStream inputStream, String nomeArquivo) {
+	    String sql = "UPDATE usuario SET foto = ? WHERE id = ?";
+
+	    try (Connection conn = Conexao.getConexao();
+	         PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+	        stmt.setBlob(1, inputStream);
+	        stmt.setLong(2, idUsuario);
+
+	        stmt.executeUpdate();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	}
+
+
+
 	
 	
 	
