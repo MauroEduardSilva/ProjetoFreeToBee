@@ -1,6 +1,7 @@
 package br.com.cadastro.model;
 
 public class Usuario {
+	private Long id;
 	private String nome;
 	private String sobrenome;
 	private String apelido;
@@ -17,6 +18,12 @@ public class Usuario {
 		this.apelido = apelido;
 		this.email = email;
 		this.senha = senha;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	public String getNome() {

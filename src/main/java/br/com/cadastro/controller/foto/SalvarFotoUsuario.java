@@ -1,5 +1,6 @@
+package br.com.cadastro.controller.foto;
+
 import java.io.IOException;
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 

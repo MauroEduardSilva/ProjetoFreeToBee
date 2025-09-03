@@ -1,5 +1,6 @@
 br\com\cadastro\controller\usuario\LoginServlet.class
 br\com\cadastro\dao\UsuarioDAO.class
+br\com\cadastro\controller\foto\ImagemUsuarioLogadoServlet.class
 br\com\cadastro\dao\AvaliacaoDAO.class
 br\com\cadastro\controller\estabelecimento\CadastrarEstabelecimentoFotoServlet.class
 br\com\cadastro\controller\estabelecimento\CadastrarEstabelecimentoServlet.class
@@ -15,6 +16,7 @@ br\com\cadastro\model\Avaliacao.class
 br\com\cadastro\controller\estabelecimento\PesquisarEstabelecimentoServlet.class
 br\com\cadastro\dao\EstabelecimentoDAO.class
 br\com\cadastro\controller\estabelecimento\ExibirEstabelecimentoServlet.class
+br\com\cadastro\controller\foto\ImagemUsuarioServlet.class
 br\com\cadastro\factory\Conexao.class
 br\com\cadastro\controller\estabelecimento\AvaliarEstabelecimentoServlet.class
 br\com\cadastro\dao\FotoDAO.class

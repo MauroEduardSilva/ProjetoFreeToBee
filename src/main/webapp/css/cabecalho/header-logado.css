@@ -14,10 +14,11 @@ body {
 #topo-pagina {
   background-color: #e0b100;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 60px;
   padding: 0 40px;
+  position: relative;
 }
 
 .menu-hamburguer {
@@ -28,12 +29,21 @@ body {
   color: black;
 }
 
+#logo {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 30px;
+}
+
 #menu {
   display: flex;
-  gap: 150px;
+  gap: 10rem;
   list-style: none;
   padding: 0;
-  margin-left: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #menu a {
@@ -48,17 +58,27 @@ body {
   color: black;
 }
 
-#logo {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-}
-
 #logo img {
 	height: 80px;
 	margin-top: 8px;
 }
 
+.user-info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 20px;
+}
+
+.user-avatar {
+	width: 59px;
+	height: 59px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: none;
+	cursor: pointer;
+	margin-right: 10px;
+}
 
 
 
