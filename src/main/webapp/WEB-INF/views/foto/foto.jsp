@@ -13,7 +13,7 @@
     <form action="${pageContext.request.contextPath}/salvarFotoUsuario" method="post" enctype="multipart/form-data">
 	    <div class="container-foto">
 	    	<label for="fotoInput" class="foto-avatar">
-	    		<span>&#128100;</span>
+	    		<img src="${pageContext.request.contextPath}/imagemUsuario?id=${idUsuario}" alt="Foto do Usuário">
 	        	<span class="editar-icone"></span> 
 	    	</label>
 	    	<input type="file" id="fotoInput" name="foto" accept="image/*" style="display: none;" required>
@@ -24,5 +24,7 @@
 		    <button type="submit" class="btn-cadastrar">Cadastre-se</button>
 	    </div>
     </form>
+    <script src="${pageContext.request.contextPath}/js/imagem-cadatro-usuario.js"></script>
+    
 </body>
 </html>
