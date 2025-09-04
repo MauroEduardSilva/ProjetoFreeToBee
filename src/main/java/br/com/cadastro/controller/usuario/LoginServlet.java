@@ -55,11 +55,11 @@ public class LoginServlet extends HttpServlet {
 				request.getRequestDispatcher("/WEB-INF/views/erro.jsp").forward(request, response);
 			}
 		
-			request.getRequestDispatcher("/WEB-INF/views/usuario/usuario-logado.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/views/usuario/pagina-inicial-logado.jsp").forward(request, response);
 			
 		}else {
 			request.setAttribute("erro","Email ou senha inválidos.");
-			request.getRequestDispatcher("/WEB-INF/views/usuario/login-usuario.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/views/usuario/pagina-inicial-logado.jsp").forward(request, response);
 		}
 	}
 }

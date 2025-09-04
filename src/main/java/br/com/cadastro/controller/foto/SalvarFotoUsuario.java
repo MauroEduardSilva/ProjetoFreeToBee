@@ -39,8 +39,8 @@ public class SalvarFotoUsuario extends HttpServlet {
                 return;
             }
         }
-
-        response.sendRedirect("foto?id=" + id);
+        request.getSession().setAttribute("usuarioId", id);
+        response.sendRedirect(request.getContextPath() + "/paginaInicialLogado");
     }
 }
 
