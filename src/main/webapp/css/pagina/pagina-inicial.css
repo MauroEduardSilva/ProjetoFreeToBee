@@ -1,0 +1,196 @@
+/* Reset e estrutura base */
+.tela {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tipografia */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.destaque {
+    color: #fbc02d;
+    font-weight: bold;
+}
+
+/* Seções principais */
+.hero, .destaques, .cta, .depoimentos {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hero {
+    font-size: 1.2rem;
+}
+
+/* Cards de estabelecimentos */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card {
+    width: 200px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* CTA */
+.cta {
+    background: #fffde7;
+    padding: 2rem;
+}
+
+/* Botão padrão */
+.botao {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #fdd835;
+    padding: 0.7rem 1.5rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #fbc02d;
+}
+
+/* Depoimentos */
+.depoimentos {
+    background-color: #fff;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.depoimento {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.depoimento img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.depoimento p {
+    margin: 0.3rem 0;
+}
+
+.depoimento strong {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f1cd00;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    flex-shrink: 0;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.footer-links div {
+    min-width: 120px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 0.3rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-links strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #fff;
+    opacity: 0.3;
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
+

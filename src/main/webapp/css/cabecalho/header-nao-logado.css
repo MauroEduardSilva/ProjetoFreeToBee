@@ -5,12 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-body {
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 #topo-pagina {
   background-color: #e0b100;
   display: flex;
@@ -33,7 +27,7 @@ body {
   gap: 200px;
   list-style: none;
   padding: 0;
-  margin-left: 15rem;
+  margin-left: 35rem;
 }
 
 #menu a {
