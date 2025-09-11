@@ -12,6 +12,9 @@ public class Estabelecimento {
 	private int curtidas;
 	private Date dataCadastro;
 	private String endereco;
+	private double notaMedia;
+	private int qtdAvaliacoes;
+
 	
 	public Estabelecimento () {}
 	
@@ -87,5 +90,22 @@ public class Estabelecimento {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
+	
+	public double getNotaMedia() {
+	    return notaMedia;
+	}
+
+	public void setNotaMedia(double notaMedia) {
+	    this.notaMedia = notaMedia;
+	}
+
+	public int getQtdAvaliacoes() {
+	    return qtdAvaliacoes;
+	}
+
+	public void setQtdAvaliacoes(int qtdAvaliacoes) {
+	    this.qtdAvaliacoes = qtdAvaliacoes;
+	}
+
 	
 }

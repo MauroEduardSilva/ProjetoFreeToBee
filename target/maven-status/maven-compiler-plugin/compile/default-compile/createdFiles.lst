@@ -20,10 +20,12 @@ br\com\cadastro\controller\foto\ImagemUsuarioServlet.class
 br\com\cadastro\controller\usuario\PaginaInicialServlet.class
 br\com\cadastro\factory\Conexao.class
 br\com\cadastro\controller\estabelecimento\AvaliarEstabelecimentoServlet.class
+br\com\cadastro\controller\estabelecimento\RankingEstabelecimentosServlet.class
 br\com\cadastro\dao\FotoDAO.class
 br\com\cadastro\controller\estabelecimento\ListaRecentesEstabelecimento.class
 br\com\cadastro\controller\foto\FotoController.class
 br\com\cadastro\model\Endereco.class
+br\com\cadastro\controller\estabelecimento\ListarDoisEstabelecimentosServlet.class
 br\com\cadastro\controller\usuario\AtualizarPerfilServlet.class
 br\com\cadastro\controller\estabelecimento\PerfilEstabelecimentoServlet.class
 br\com\cadastro\factory\TesteConexao.class

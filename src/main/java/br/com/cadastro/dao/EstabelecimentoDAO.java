@@ -150,6 +150,48 @@ public class EstabelecimentoDAO {
     	}
     	return null;
     }
+    
+    public List<Estabelecimento> buscarDoisRecentes() throws SQLException {
+        List<Estabelecimento> lista = new ArrayList<>();
+        String sql = "SELECT * FROM estabelecimento ORDER BY id DESC LIMIT 2";
+
+        try (PreparedStatement stmt = connection.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+
+            while (rs.next()) {
+                Estabelecimento e = new Estabelecimento();
+                e.setId(rs.getLong("id"));
+                e.setNome(rs.getString("nome"));
+                e.setEmail(rs.getString("email"));
+                e.setTelefone(rs.getString("telefone"));
+                e.setCNPJ(rs.getString("cnpj"));
+                e.setTipo(rs.getString("tipo"));
+                lista.add(e);
+            }
+        }
+        return lista;
+    }
+    
+    public List<Estabelecimento> buscarTodos() throws SQLException {
+        List<Estabelecimento> lista = new ArrayList<>();
+        String sql = "SELECT * FROM estabelecimento ORDER BY nota_media DESC";
+        
+        PreparedStatement stmt = connection.prepareStatement(sql);
+        ResultSet rs = stmt.executeQuery();
+        
+        while (rs.next()) {
+            Estabelecimento est = new Estabelecimento();
+            est.setId(rs.getInt("id"));
+            est.setNome(rs.getString("nome"));
+            est.setNotaMedia(rs.getDouble("nota_media"));
+            est.setQtdAvaliacoes(rs.getInt("qtd_avaliacoes"));
+            lista.add(est);
+        }
+        
+        return lista;
+    }
+
+
 
     
     

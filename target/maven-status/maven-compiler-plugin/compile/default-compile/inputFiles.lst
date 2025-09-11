@@ -3,9 +3,11 @@ C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\CadastrarEstabelecimentoFotoServlet.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\CadastrarEstabelecimentoServlet.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\ExibirEstabelecimentoServlet.java
+C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\ListarDoisEstabelecimentosServlet.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\ListaRecentesEstabelecimento.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\PerfilEstabelecimentoServlet.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\PesquisarEstabelecimentoServlet.java
+C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\estabelecimento\RankingEstabelecimentosServlet.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\foto\FotoController.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\foto\FotoServlet.java
 C:\Users\Mauro Eduard\ProjetoFreeToBee\src\main\java\br\com\cadastro\controller\foto\ImagemUsuarioLogadoServlet.java

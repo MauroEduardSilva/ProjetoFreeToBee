@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/usuario/pagina-inicial-usuario-logado.css">
 </head>
 <body>
-
     <%@ include file="/WEB-INF/views/cabecalho/header-logado.jsp" %>
 
     <div class="container">
@@ -18,7 +17,7 @@
             
             <div class="comentario">
                 <div class="perfil">
-                    <img src="${pageContext.request.contextPath}/imagens/lorena.jpg" alt="Lorena" class="foto-perfil">
+                    <img src="${pageContext.request.contextPath}/img/images2.jpg" alt="Lorena" class="foto-perfil">
                     <div>
                         <strong>Lorena Maschio</strong><br>
                         <span class="usuario">@lorena</span>
@@ -33,7 +32,7 @@
 
             <div class="comentario">
                 <div class="perfil">
-                    <img src="${pageContext.request.contextPath}/imagens/mario.jpg" alt="Mário" class="foto-perfil">
+                    <img src="${pageContext.request.contextPath}/img/images4.jpg" alt="Mário" class="foto-perfil">
                     <div>
                         <strong>Mário</strong><br>
                         <span class="usuario">@bratmario</span>
@@ -50,23 +49,25 @@
         <div class="destaques-semana">
             <h3>Destaques da semana</h3>
 
-            <div class="destaque">
-                <img src="${pageContext.request.contextPath}/imagens/padaria.jpg" alt="Pastelaria Oscar">
-                <div>
-                    <strong>Pastelaria Oscar</strong><br>
-                    <span>126 avaliações</span>
-                </div>
-            </div>
+            <section class="destaques">
+	            <div class="cards">
+	            
+	            	
+			        <c:forEach var="est" items="${recentes}">
+					    <div class="destaque">
+					        <a href="${pageContext.request.contextPath}/perfilEstabelecimento?id=${est.id}">
+					            <img src="${pageContext.request.contextPath}/imagemFoto?id=${est.id}" alt="Foto de ${est.nome}" />
+					        </a>
+					    </div>
+					</c:forEach>
 
-            <div class="destaque">
-                <img src="${pageContext.request.contextPath}/imagens/mercado.jpg" alt="Mercearia do Doc's">
-                <div>
-                    <strong>Mercearia do Doc's</strong><br>
-                    <span>19 avaliações</span>
-                </div>
-            </div>
+					
+	            </div>
+	        </section>
 
-            <a href="#" class="mais-destaques">Ver mais estabelecimentos amigáveis...</a>
+            <a href="${pageContext.request.contextPath}/ranking-estabelecimentos" class="mais-destaques">Ver mais estabelecimentos amigáveis...</a>
+
+
         </div>
     </div>
 

@@ -1,0 +1,66 @@
+.container-ranking {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.form-busca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #eee;
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+
+.form-busca input {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    flex: 1;
+}
+
+.btn-filtro {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-filtro img {
+    width: 20px;
+}
+
+.grid-estabelecimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.card-estabelecimento {
+    text-align: center;
+}
+
+.imagem-est {
+    position: relative;
+}
+
+.imagem-est img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nota-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #f4c400;
+    color: #000;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+}
